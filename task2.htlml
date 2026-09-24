@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2 - Component Library</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display: flex; flex-direction: column; gap: 2.5rem;">
+
+  <h2>Task 2: Component Library (Flexbox)</h2>
+
+  <!-- 1. Navbar -->
+  <nav class="navbar">
+    <h3>BrandLogo</h3>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+    </div>
+    <div class="nav-buttons">
+      <button>Log In</button>
+      <button style="background: var(--primary); color: white;">Sign Up</button>
+    </div>
+  </nav>
+
+  <!-- 2. Cards Row -->
+  <section class="cards-row">
+    <div class="card">
+      <h3>Short Plan</h3>
+      <p>Basic short description text.</p>
+      <button class="card-btn">Select</button>
+    </div>
+    <div class="card">
+      <h3>Extended Business Plan</h3>
+      <p>This card contains a significantly longer description to demonstrate that regardless of content length, all cards remain equal in height and all action buttons align perfectly at the bottom line.</p>
+      <button class="card-btn">Select</button>
+    </div>
+    <div class="card">
+      <h3>Medium Plan</h3>
+      <p>Standard features included for growing teams.</p>
+      <button class="card-btn">Select</button>
+    </div>
+  </section>
+
+  <!-- 3. Pagination Bar -->
+  <div class="pagination">
+    <button>&laquo; Previous</button>
+    <div class="pages">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+    <button>Next &raquo;</button>
+    <div style="margin-left: auto;">Showing 1–10 of 50 results</div>
+  </div>
+
+  <!-- 4. Comment Block -->
+  <div class="comment">
+    <div class="avatar">YA</div>
+    <div class="comment-content">
+      <h4>Yerassyl Almakhan</h4>
+      <p>This comment text wraps beside the avatar image and clean flex positioning ensures it never slides under the avatar block, even when the viewport shrinks or text expands.</p>
+    </div>
+  </div>
+
+  <!-- 5. Pricing Table -->
+  <section class="pricing">
+    <div class="plan">
+      <h3>Starter</h3>
+      <h2>$10/mo</h2>
+      <p>Basic features</p>
+    </div>
+    <div class="plan recommended">
+      <h3>Pro (Recommended)</h3>
+      <h2>$29/mo</h2>
+      <p>Advanced features + Priority Support</p>
+    </div>
+    <div class="plan">
+      <h3>Enterprise</h3>
+      <h2>$99/mo</h2>
+      <p>Full access</p>
+    </div>
+  </section>
+
+</body>
+</html> 

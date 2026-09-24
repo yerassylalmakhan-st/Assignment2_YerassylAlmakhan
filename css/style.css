@@ -1,0 +1,270 @@
+:root {
+  --primary: #1a4ba0;
+  --bg-light: #f8f9fa;
+  --text: #212529;
+  --border: #dee2e6;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background-color: #fff;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+/* 1. Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: var(--bg-light);
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto; /* Прижимает группу к правому краю */
+}
+
+/* 2. Cards Row */
+.cards-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
+.card p {
+  margin: 1rem 0;
+}
+
+.card-btn {
+  margin-top: auto; /* Выравнивает кнопки по нижней линии */
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 3. Pagination Bar */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-light);
+}
+
+.pages {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pages span {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* 4. Comment Block */
+.comment {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0; /* Не сжимается */
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+/* 5. Pricing Table */
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.plan {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  background: #fff;
+}
+
+.plan.recommended {
+  padding: 3rem 1.5rem; 
+  border: 2px solid var(--primary);
+  background: #f0f4ff;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.controls button {
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-light);
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+
+.cards-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: #fff;
+}
+
+.card-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.card-date {
+  margin-top: auto; 
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+
+.cards-container.mode-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+
+.cards-container.mode-list {
+  grid-template-columns: 1fr;
+}
+
+.cards-container.mode-list .card-item {
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cards-container.mode-list .card-item img {
+  width: 140px;
+  height: 100px;
+}
+
+.cards-container.mode-list .card-body {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.cards-container.mode-list .card-date {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+
+.cards-container.mode-magazine {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.cards-container.mode-magazine .card-item:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: #f0f4ff;
+  border: 2px solid var(--primary);
+}
+
+.cards-container.mode-magazine .card-item:first-child img {
+  height: 320px;
+}  

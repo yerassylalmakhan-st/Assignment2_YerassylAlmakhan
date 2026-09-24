@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Three Layouts One Markup</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h2>Task 3: Three Layouts, One Markup</h2>
+  <p style="margin-bottom: 1rem;">Click buttons below to switch layout modes without altering HTML structure:</p>
+
+  
+  <div class="controls">
+    <button onclick="document.getElementById('app').className='cards-container mode-grid'">Grid Mode</button>
+    <button onclick="document.getElementById('app').className='cards-container mode-list'">List Mode</button>
+    <button onclick="document.getElementById('app').className='cards-container mode-magazine'">Magazine Mode</button>
+  </div>
+
+  
+  <div id="app" class="cards-container mode-grid">
+
+    <!-- Card 1 (Lead Item in Magazine Mode) -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Premier League Match">
+      <div class="card-body">
+        <h3>Title 1: Erling Haaland Breaks Scoring Record Again</h3>
+        <p>A detailed breakdown of Manchester City's phenomenal tactical setup and Haaland's clinical finishing in front of goal during this week's key match.</p>
+        <span class="card-date">Sep 24, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Stadium Atmosphere">
+      <div class="card-body">
+        <h3>Title 2: Top Captaincy Choices for Gameweek 6</h3>
+        <p>Analyzing underlying metrics, expected goals (xG), and fixture difficulty ratings to help you pick the highest scoring captain.</p>
+        <span class="card-date">Sep 23, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Football Pitch">
+      <div class="card-body">
+        <h3>Title 3: Budget Midfielders Under £6.0m</h3>
+        <p>Short analysis of differential midfielders with high threat potential.</p>
+        <span class="card-date">Sep 22, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Match Action">
+      <div class="card-body">
+        <h3>Title 4: Wildcard Strategy Guide</h3>
+        <p>When is the optimal gameweek to activate your first wildcard chip for maximum green arrows.</p>
+        <span class="card-date">Sep 21, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Stadium">
+      <div class="card-body">
+        <h3>Title 5: Defensive Rotations</h3>
+        <p>Pairing cheap defenders with complementary home/away fixtures.</p>
+        <span class="card-date">Sep 20, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Tactics">
+      <div class="card-body">
+        <h3>Title 6: Injury Updates & Press Conferences</h3>
+        <p>Latest manager quotes and team news ahead of Friday's deadline.</p>
+        <span class="card-date">Sep 19, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Player Form">
+      <div class="card-body">
+        <h3>Title 7: Transfer Market Trends</h3>
+        <p>Who are FPL managers buying and selling the most this week?</p>
+        <span class="card-date">Sep 18, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Corner Kick">
+      <div class="card-body">
+        <h3>Title 8: Set Piece Takers List</h3>
+        <p>Updated table of designated penalty, corner, and direct free-kick takers across all 20 clubs.</p>
+        <span class="card-date">Sep 17, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Training">
+      <div class="card-body">
+        <h3>Title 9: Goalkeeper Premium vs Cheap Strategy</h3>
+        <p>Is investing in a £5.5m keeper worth it over set-and-forget £4.5m options?</p>
+        <span class="card-date">Sep 16, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Action">
+      <div class="card-body">
+        <h3>Title 10: Expected Assists (xA) Leaders</h3>
+        <p>Unlucky playmakers who created chances but were let down by finishing.</p>
+        <span class="card-date">Sep 15, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Fans">
+      <div class="card-body">
+        <h3>Title 11: Mini-League Rivalry Tips</h3>
+        <p>Effective tactical differential moves to catch up with league leaders.</p>
+        <span class="card-date">Sep 14, 2026</span>
+      </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card-item">
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Ball">
+      <div class="card-body">
+        <h3>Title 12: Blank & Double Gameweek Planning</h3>
+        <p>Early look ahead to domestic cup disruptions and reschedule windows.</p>
+        <span class="card-date">Sep 13, 2026</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html> 
